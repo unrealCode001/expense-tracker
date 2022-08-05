@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  },
+  "name": "expense-tracker-fullstack",
+  "description": "Expense tracker application using React, Node, Express, MongoDB AKA \"MERN Stack\". Application is designed to have a frontend UI that allows users to create, edit, and delete expenses. The backend is designed to store the expenses in MongoDB database and communicate with the frontend via RESTful API.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "node server",
+    "server": "nodemon server.js",
+    "client" : "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softwareiscool/expense-tracker-fullstack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/softwareiscool/expense-tracker-fullstack/issues"
+  },
+  "homepage": "https://github.com/softwareiscool/expense-tracker-fullstack#readme"
+}
